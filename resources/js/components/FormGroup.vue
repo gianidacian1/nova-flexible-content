@@ -23,10 +23,7 @@
                         <icon type="minus" class="align-top" width="16" height="16" />
                     </button>
 
-                    <p class="text-80 grow px-4">
-                      <span class="mr-3 font-semibold">#{{ index + 1 }}</span>
-                      {{ group.title }}
-                    </p>
+                    <form-nova-flexible-content-group-title :group="group" :index="index" />
 
                     <div class="flex" v-if="!readonly">
                         <button
